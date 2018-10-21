@@ -1,3 +1,12 @@
-<p>
-  custom-input works!
-</p>
+<fieldset class="form-group">
+  <legend>
+    <ng-content></ng-content>
+  </legend>
+
+  <div *ngFor="let i of [1,2,3,4,5]" class="form-check form-check-inline">
+    <label class="form-check-label">
+      <input [formControl]="rate" class="form-check-input" type="radio" [name]="name" [value]="i">
+      <span>{{i}}</span>
+    </label>
+  </div>
+</fieldset>

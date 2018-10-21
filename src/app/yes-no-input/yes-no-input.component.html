@@ -1,0 +1,17 @@
+<fieldset class="form-group">
+  <legend>
+    <ng-content></ng-content>
+  </legend>
+  <div class="form-check form-check-inline">
+    <label class="UiKit__checkbox">
+      <input [formControl]="input" type="radio" class="form-check-input" value="1" [name]="name">
+      <span>Да</span>
+    </label>
+  </div>
+  <div class="form-check form-check-inline">
+    <label class="UiKit__checkbox">
+      <input [formControl]="input" type="radio" class="form-check-input" value="0" [name]="name">
+      <span>Нет</span>
+    </label>
+  </div>
+</fieldset>

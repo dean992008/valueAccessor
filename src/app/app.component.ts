@@ -17,7 +17,13 @@ export class AppComponent {
       ]],
       lastname: ['', [
         Validators.required
-      ]]
+      ]],
+      rate1: [0, []],
+      rate2: [2, []],
+      rate3: [0, []],
+      rate4: [5, []],
+      question1: [0, []],
+      question2: [0, []]
     });
   }
 }
